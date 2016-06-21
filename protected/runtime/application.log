@@ -1,0 +1,106 @@
+2016/06/21 13:50:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('index')
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('index')
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('uploadify/index')
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/wulin/workplace/web/yii_uploadify/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/index
+---
+2016/06/21 14:14:54 [error] [php] Missing argument 1 for CApplication::createUrl(), called in /home/wulin/workplace/web/yii_uploadify/protected/views/uploadify/index.php on line 6 and defined (/usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php:529)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): UploadifyController->renderInternal()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(869): UploadifyController->renderFile()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(782): UploadifyController->renderPartial()
+#3 /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php(21): UploadifyController->render()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): UploadifyController->actionView()
+#5 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#7 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#8 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#9 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/
+in /home/wulin/workplace/web/yii_uploadify/protected/views/uploadify/index.php (6)
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (21)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
+2016/06/21 14:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "checkExists".' in /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('checkExists')
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('checkExists')
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('uploadify/check...')
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/wulin/workplace/web/yii_uploadify/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/checkExists
+HTTP_REFERER=http://domob-206.domob-inc.cn:18444/yii_uploadify/index.php?r=uploadify/
+---
+2016/06/21 14:38:56 [error] [php] Undefined variable: verifyToken (/home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php:25)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/uploadify
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (25)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
+2016/06/21 14:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "checkExists".' in /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('checkExists')
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('checkExists')
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('uploadify/check...')
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/wulin/workplace/web/yii_uploadify/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/checkExists
+---
+2016/06/21 14:39:42 [error] [php] Undefined index: filename (/home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php:54)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/checkExist
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (54)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
+2016/06/21 14:40:08 [error] [php] Undefined variable: verifyToken (/home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php:25)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/uploadify
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (25)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
+2016/06/21 14:41:17 [error] [php] move_uploaded_file(/home/wulin/workplace/web/yii_uploadify/protected/uploads/idfa_2.bak.txt): failed to open stream: 没有那个文件或目录 (/home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php:37)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/uploadify
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (37)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
+2016/06/21 14:44:26 [error] [php] move_uploaded_file(/data/test/uploads/imei_1.txt): failed to open stream: 没有那个文件或目录 (/home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php:37)
+Stack trace:
+#0 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(286): UploadifyController->runAction()
+#2 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CController.php(265): UploadifyController->runActionWithFilters()
+#3 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): UploadifyController->run()
+#4 /usr/local/yii/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /usr/local/yii/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/wulin/workplace/web/yii_uploadify/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii_uploadify/index.php?r=uploadify/uploadify
+in /home/wulin/workplace/web/yii_uploadify/protected/controllers/UploadifyController.php (37)
+in /home/wulin/workplace/web/yii_uploadify/index.php (16)
